@@ -1201,6 +1201,30 @@ html.js .service-card.is-visible::after {
     padding: 80px 20px 100px;
   }
 
+  .service-card.item-1,
+  .service-card.item-2,
+  .service-card.item-3,
+  .service-card.item-4 {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .service-list,
+  .service-card,
+  .service-inner,
+  .service-text {
+    min-width: 0;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+
+
+
   .service-list {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1242,6 +1266,18 @@ html.js .service-card.is-visible::after {
     padding: 60px 16px 80px;
   }
 
+  .service-inner {
+    flex-direction: column;
+    gap: 12px;  /* will try 18px later */
+  }
+
+  .service-text h3,
+  .service-text p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+
   .service-logo {
     font-size: 22px;
     margin-bottom: 24px;
@@ -1249,9 +1285,7 @@ html.js .service-card.is-visible::after {
     letter-spacing: 0.14em;
   }
 
-  .service-inner {
-    gap: 18px;
-  }
+  
 
   .service-text h3 {
     font-size: 16px;
