@@ -347,7 +347,11 @@ body.intro-done .intro-screen{
   transform: translateY(-1px); }
   .arrow{ margin-left: 8px; }
 
-  
+  @media (max-width: 600px){
+  .nav-right {
+    display: none;
+  }
+}
 
 /* =========================================================
    3) HERO TEXT
