@@ -217,3 +217,9 @@ document.documentElement.classList.add('js');
   // Ensure first panel starts visible
   panels[0].classList.add("is-active");
 })();
+
+
+(() => {
+  const el = document.getElementById("year");
+  if (el) el.textContent = new Date().getFullYear();
+})();
