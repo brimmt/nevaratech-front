@@ -129,7 +129,7 @@ document.documentElement.classList.add('js');
   });
 })();
 
-
+// Intro
 (() => {
   const intro = document.querySelector('.intro-screen');
   if (!intro) return;
@@ -140,14 +140,17 @@ document.documentElement.classList.add('js');
     return;
   }
 
-  // Let logo fade in (0.8s) + hold (2s) before exiting
-  const HOLD_TIME = 2800; // ms (fade-in included)
+  // Match the CSS loading bar:
+  // - bar animation: 1400ms
+  // - bar delay: 320ms
+  // Total ≈ 1720ms, add a small buffer so it feels intentional
+  const HOLD_TIME = 1900; // ms
 
   setTimeout(() => {
     document.body.classList.add('intro-done');
     sessionStorage.setItem('introPlayed', 'true');
 
-    // Remove from DOM after fade-out completes
+    // Remove from DOM after fade-out completes (matches your 800ms transition)
     setTimeout(() => intro.remove(), 900);
   }, HOLD_TIME);
 })();
