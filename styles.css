@@ -943,12 +943,10 @@ body.nav-sticky .nav{
   transition: background 250ms ease, transform 200ms ease;
 }
 .consult-cta:hover{
-  background: rgba(79,140,255,0.16);
-  border-color: rgba(79,140,255,0.45);
-  box-shadow:
-    0 0 0 6px rgba(79,140,255,0.10),
-    0 18px 40px rgba(0,0,0,0.45);
+  background: rgba(79, 140, 255, 0.18);
+  box-shadow: 0 10px 35px rgba(79, 140, 255, 0.35);
   transform: translateY(-1px);
+  
 }
 
 .consult-note {
