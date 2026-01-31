@@ -888,6 +888,20 @@ body.nav-sticky .nav{
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
+.consultation::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      600px 260px at 50% 0%,
+      rgba(79,140,255,0.12),
+      transparent 70%
+    );
+  opacity: 0.6;
+}
+
 .consult-inner{
   max-width: 720px;
   margin: 0 auto;
@@ -895,10 +909,10 @@ body.nav-sticky .nav{
 }
 
 .consultation h2{
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 
 .consultation p{
@@ -928,12 +942,22 @@ body.nav-sticky .nav{
 
   transition: background 250ms ease, transform 200ms ease;
 }
-
 .consult-cta:hover{
-  background: rgba(255,255,255,0.14);
+  background: rgba(79,140,255,0.16);
+  border-color: rgba(79,140,255,0.45);
+  box-shadow:
+    0 0 0 6px rgba(79,140,255,0.10),
+    0 18px 40px rgba(0,0,0,0.45);
   transform: translateY(-1px);
 }
 
+.consult-note {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.02em;
+}
 
 
 /*=========================================================
